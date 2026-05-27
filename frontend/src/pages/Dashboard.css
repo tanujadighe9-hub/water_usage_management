@@ -1,0 +1,15 @@
+.dashboard-page { min-height:100vh; background:var(--b1); }
+
+.dashboard { max-width:960px; margin:0 auto; padding:22px 16px 44px; }
+
+.bottom-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:20px; }
+@media(max-width:640px) { .bottom-grid { grid-template-columns:1fr; } }
+
+.dash-footer { text-align:center; font-size:11px; color:var(--muted); font-family:var(--font-mono); letter-spacing:.5px; margin-top:12px; opacity:.55; }
+
+.dash-loading {
+  min-height:100vh; display:flex; flex-direction:column;
+  align-items:center; justify-content:center; gap:16px;
+}
+.loading-drop { font-size:48px; animation:fadeInUp .6s ease; }
+.loading-text  { font-size:14px; color:var(--muted); font-family:var(--font-mono); }

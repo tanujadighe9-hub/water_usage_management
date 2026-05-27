@@ -1,0 +1,20 @@
+.charts-row {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 16px; margin-bottom: 20px;
+}
+@media(max-width:640px) { .charts-row { grid-template-columns: 1fr; } }
+
+.tt-box { background:var(--b2); border:1px solid var(--border2); border-radius:8px; padding:10px 14px; font-size:12px; }
+.tt-label { color:var(--muted); margin-bottom:4px; font-family:var(--font-mono); }
+.tt-row { margin-top:2px; }
+
+.donut-wrap { display:flex; align-items:center; gap:18px; flex-wrap:wrap; }
+
+.donut-legend { display:flex; flex-direction:column; gap:9px; flex:1; min-width:110px; }
+
+.leg-row { display:flex; align-items:center; gap:7px; font-size:12px; }
+.leg-dot { width:9px; height:9px; border-radius:3px; flex-shrink:0; }
+.leg-name { color:var(--muted); min-width:52px; font-size:11px; }
+.leg-bar { flex:1; height:3px; background:var(--card); border-radius:2px; overflow:hidden; }
+.leg-fill { height:100%; border-radius:2px; transition:width .8s cubic-bezier(.4,0,.2,1); }
+.leg-val { font-family:var(--font-mono); font-size:11px; color:var(--c4); min-width:30px; text-align:right; }
